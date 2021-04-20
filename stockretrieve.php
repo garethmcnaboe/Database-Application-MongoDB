@@ -1,3 +1,4 @@
+<!--retrieves and prints out documents from the stock collection-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

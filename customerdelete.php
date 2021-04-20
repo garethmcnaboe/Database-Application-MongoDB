@@ -1,5 +1,6 @@
 <?php
 
+//delete a full document from the customer collection
 require_once __DIR__ . "/vendor/autoload.php";
 include_once "./dbconfig-atlasmongo.php";
 

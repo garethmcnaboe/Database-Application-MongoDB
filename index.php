@@ -1,3 +1,4 @@
+<!--This file contains the navigation for the application-->
 <!DOCTYPE html>
 <html>
 <!-- import angular in order to facilitate the routing -->

@@ -38,7 +38,7 @@ $updateResult = $collection->updateOne(
         "LastInvoiceNum" => "$InvoiceNum"
     ]]);
 
-//Create the new entry in the database - using the updated invoice number
+//Create the new entry in the order collection - using the updated invoice number
 $client = new MongoDB\Client($url);
 
 $db = $client->cs230assignment5;

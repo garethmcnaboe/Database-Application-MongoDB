@@ -1,3 +1,4 @@
+<!--Updates the products and cost fields in a document in the order collection-->
 <?php
 
 require_once __DIR__ . "/vendor/autoload.php";

@@ -1,5 +1,7 @@
 <?php
 
+//deletes an individual document from the orders collection
+//matches against the unique invoice number
 require_once __DIR__ . "/vendor/autoload.php";
 include_once "./dbconfig-atlasmongo.php";
 

@@ -1,3 +1,4 @@
+<!--Updates the delivery status of a document in the order collection-->
 <?php
 
 require_once __DIR__ . "/vendor/autoload.php";

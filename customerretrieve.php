@@ -58,7 +58,7 @@ $cursor = $collection->find([
                     echo "<th>Ship County or City</th>";
                     echo "<th>Ship Eircode</th>";
         echo"</tr>";
-
+        //iterates over the results to match the table headings
         foreach($cursor as $document){
                 echo "<tr>";
                     echo "<td>", $document['CustomerNo'],"</td>";

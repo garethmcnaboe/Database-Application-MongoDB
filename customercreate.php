@@ -39,7 +39,7 @@ $updateResult = $collection->updateOne(
     ]]);
 
 
-//Create the new entry
+//Create the new entry in the customer collection
 $client = new MongoDB\Client($url);
 
 $db = $client->cs230assignment5;
@@ -83,6 +83,7 @@ else{
     $shipAddressEircode = $_POST['shipAddressEircode']; 
 }
 
+//insert the new document into the customer collection
 $insertOneResult = $collection->insertOne([
     "CustomerNo" => "$CustomerNum",
     "Title" => $title,
@@ -104,6 +105,3 @@ $insertOneResult = $collection->insertOne([
 
 printf("Inserted %d document(s)\n", $insertOneResult->getInsertedCount());
 var_dump($insertOneResult->getInsertedId());
-
-
-//header("location:./index.php?Stock Insert Successful");

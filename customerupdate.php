@@ -50,6 +50,7 @@ $SearchTerm1 = $_POST['uSearchTerm1'];
 $SearchTerm2 = $_POST['uSearchTerm2'];
 $SearchTerm3 = $_POST['uSearchTerm3'];
 
+//update command
 $updateResult = $collection->updateOne(
     [
     "First" => "$SearchTerm1", 

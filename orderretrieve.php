@@ -1,3 +1,4 @@
+<!--Queries database and prints documents retrieved from the order collection-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
