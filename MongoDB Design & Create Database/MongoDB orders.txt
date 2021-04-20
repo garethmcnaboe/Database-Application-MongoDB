@@ -1,0 +1,44 @@
+//create collection for phoneorders
+db.createCollection('phoneorders')
+
+//populate the phonesinstock collection with some random phones
+db.phoneorders.insertMany(
+[
+		{
+		InvoiceNo: '1',
+		CustomerNo:'1',
+		TotalPrice: 1029.98,  
+		Products:[
+				{
+				Manufacturer: 'Huawei',
+				Model: 'P30 Pro',
+				Price: 499.99
+				},
+				{
+				Manufacturer: 'TCL',
+				Model: '10 Pro',
+				Price: 399.99
+				}],
+		PaymentStatus: 'Paid in Full',
+		DeliveryStatus: 'Dispatched'
+		},
+		{
+		InvoiceNo: '2',
+		CustomerNo: '2',
+		TotalPrice: 319.98,   
+		Products:[
+				{
+				Manufacturer: 'Samsung Galaxy',
+				Model: 'A12',
+				Price: 189.99
+				},
+				{
+				Manufacturer: 'Nokia',
+				Model: '2.4',
+				Price: 129.99
+				}],
+		PaymentStatus: 'Receivable',
+		DeliveryStatus: 'Not Dispatched'
+		}
+]
+)

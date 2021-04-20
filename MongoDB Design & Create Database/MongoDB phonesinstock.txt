@@ -1,0 +1,70 @@
+//Create new database
+use cs230assignment4
+
+//create collection for phoneinstock
+db.createCollection('phonesinstock')
+
+//populate the phonesinstock collection with some random phones
+db.phonesinstock.insertMany(
+	[
+		{
+		StockNumber: '1',
+		Manufacturer: 'Huawei',
+		Model: 'P30 Pro',
+		Price: 499.99
+		},
+		{
+		StockNumber: '2',	
+		Manufacturer: 'Samsung Galaxy',
+		Model: 'S20 FE 4G',
+		Price: 529.99
+		},
+		{
+		StockNumber: '3',	
+		Manufacturer: 'Apple iPhone',
+		Model: '11 64GB',
+		Price: 629.99
+		},
+		{
+		StockNumber: '4',	
+		Manufacturer: 'Huawei',
+		Model: 'PSmart 2021',
+		Price: 199.99
+		},
+		{
+		StockNumber: '5',	
+		Manufacturer: 'Samsung Galaxy',
+		Model: 'A12',
+		Price: 189.99
+		},
+		{
+		StockNumber: '6',	
+		Manufacturer: 'Apple iPhone',
+		Model: 'SE 2020',
+		Price: 489.99
+		},
+		{
+		StockNumber: '7',	
+		Manufacturer: 'Nokia',
+		Model: '2.4',
+		Price: 129.99
+		},
+		{
+		StockNumber: '8',	
+		Manufacturer: 'Doro',
+		Model: '7030',
+		Price: 129.99
+		},
+		{
+		StockNumber: '9',	
+		Manufacturer: 'Google',
+		Model: 'Pixel 5',
+		Price: 449.99
+		},
+		{
+		StockNumber: '10',	
+		Manufacturer: 'TCL',
+		Model: '10 Pro',
+		Price: 399.99
+		}
+	])

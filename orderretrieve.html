@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Retrieve</title>
+    <!--Download bootstrap & jquery in order to support bootsnip-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/>
+</head>
+<body>
+    <form class="form-horizontal" action="./orderretrieve.php" method="POST">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Retrieve Order</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Customer First Name</label>  
+          <div class="col-md-4">
+          <input id="orderFirst" name="orderFirst" type="text" placeholder="Insert Customer First Name Here" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Customer Surname</label>  
+          <div class="col-md-4">
+          <input id="orderSurname" name="orderSurname" type="text" placeholder="Insert Customer Surname Here" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Customer Email</label>  
+          <div class="col-md-4">
+          <input id="orderEmail" name="orderEmail" type="text" placeholder="Insert Customer Email Here" class="form-control input-md">  
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton">Retrieve Order Details</label>
+          <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+</body>
+</html>

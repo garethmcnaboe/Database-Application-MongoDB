@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Update</title>
+    <!--Download bootstrap & jquery in order to support bootsnip-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/>
+</head>
+<body>
+
+    <form class="form-horizontal" action="./orderupdatepayment.php" method="POST">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Change Payment Status</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Invoice Number</label>  
+          <div class="col-md-4">
+          <input id="InvoiceNo1" name="InvoiceNo1" type="text" placeholder="Insert Invoice Number Here" class="form-control input-md">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Revised Payment Status</label>  
+          <div class="col-md-4">
+          <input id="PaymentStatus1" name="PaymentStatus1" type="text" placeholder="Insert new Payment Status Here" class="form-control input-md">
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton">Change Payment Status</label>
+          <div class="col-md-4">
+            <button id="changePaymentStatus" name="changePaymentStatus" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form class="form-horizontal" action="./orderupdatedelivery.php" method="POST">
+      <fieldset>
+      
+      <!-- Form Name -->
+      <legend>Change Delivery Status</legend>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Invoice Number</label>  
+        <div class="col-md-4">
+        <input id="InvoiceNo2" name="InvoiceNo2" type="text" placeholder="Insert Invoice Number Here" class="form-control input-md">
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+        <div class="col-md-4">
+        <input id="DeliveryStatus1" name="DeliveryStatus1" type="text" placeholder="placeholder" class="form-control input-md">
+        </div>
+      </div>
+      
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="singlebutton">Change Payment Status</label>
+        <div class="col-md-4">
+          <button id="changeDeliveryStatus" name="changeDeliveryStatus" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      
+      </fieldset>
+  </form>
+
+  <hr>
+  <form class="form-horizontal" action="./orderupdateproducts.php" method="POST">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Change Products and Price</legend>
+    
+     <!-- Text input-->
+     <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Invoice Number</label>  
+      <div class="col-md-4">
+      <input id="InvoiceNo3" name="InvoiceNo3" type="text" placeholder="Insert Invoice Number Here" class="form-control input-md">
+      </div>
+    </div>
+    
+<hr>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Product 1: Manufacturer</label>  
+      <div class="col-md-4">
+      <input id="ouManufacturer1" name="ouManufacturer1" type="text" placeholder="Insert Manufacturer Here" class="form-control input-md" required="">
+     
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Product 1: Model</label>  
+      <div class="col-md-4">
+      <input id="ouModel1" name="ouModel1" type="text" placeholder="Insert Model here" class="form-control input-md" required="">     
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Product 1: Price</label>  
+      <div class="col-md-4">
+      <input id="ouPrice1" name="ouPrice1" type="text" placeholder="Insert Price Here" class="form-control input-md" required="">
+      </div>
+    </div>
+
+<hr>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Product 2: Manufacturer</label>  
+      <div class="col-md-4">
+      <input id="ouManufacturer2" name="ouManufacturer2" type="text" placeholder="Insert Manufacturer Here" class="form-control input-md">
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Product 2: Model</label>  
+      <div class="col-md-4">
+      <input id="ouModel2" name="ouModel2" type="text" placeholder="Insert Model Here" class="form-control input-md">
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Product 2: Price</label>  
+      <div class="col-md-4">
+      <input id="ouPrice2" name="ouPrice2" type="text" placeholder="Insert Price Here" class="form-control input-md"> 
+      </div>
+    </div>
+
+<hr>
+    
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Product 3: Manufacturer</label>  
+        <div class="col-md-4">
+        <input id="ouManufacturer3" name="ouManufacturer3" type="text" placeholder="Insert Payment Status Here" class="form-control input-md" required=""> 
+        </div>
+      </div>
+    
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Product 3: Model</label>  
+        <div class="col-md-4">
+        <input id="ouModel3" name="ouModel3" type="text" placeholder="Insert Model Here" class="form-control input-md">
+        </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Product 3: Price</label>  
+        <div class="col-md-4">
+        <input id="ouPrice3" name="ouPrice3" type="text" placeholder="Insert Price Here" class="form-control input-md"> 
+        </div>
+    </div>
+
+<hr>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Total Price</label>  
+        <div class="col-md-4">
+        <input id="ouTotalPrice" name="ouTotalPrice" type="text" placeholder="Insert Payment Status Here" class="form-control input-md" required=""> 
+        </div>
+    </div>
+    
+<hr>
+    <!-- Button -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="singlebutton">Change Products and Price</label>
+        <div class="col-md-4">
+        <button id="updateOrderButton" name="updateOrderButton" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+    </fieldset>
+    </form>
+
+</body>
+</html>

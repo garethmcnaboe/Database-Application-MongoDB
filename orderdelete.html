@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Delete</title>
+    <!--Download bootstrap & jquery in order to support bootsnip-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/>
+</head>
+<body>
+    <form class="form-horizontal" action="./orderdelete.php" method="POST">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Delete Order</legend>
+        
+        <!-- Text input-->
+        <div class="form-group" >
+          <label class="col-md-4 control-label" for="textinput">Invoice Number</label>  
+          <div class="col-md-4">
+          <input id="dInvoiceNumber" name="dInvoiceNumber" type="text" placeholder="Insert Invoice Number Here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton">Delete Order</label>
+          <div class="col-md-4">
+            <button id="singlebutton" name="singlebutton" class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+
+</body>
+</html>

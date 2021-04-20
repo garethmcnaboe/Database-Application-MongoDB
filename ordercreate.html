@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Create</title>
+    <!--Download bootstrap & jquery in order to support bootsnip-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/> 
+    <!--Link to CSS-->
+    <script src="./order.js"></script>
+</head>
+<body>
+  
+    <form class="form-horizontal" action="./ordercreate.php" method="POST">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Order Create</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Customer Number</label>  
+          <div class="col-md-4">
+          <input id="ocCustomerNo" name="ocCustomerNo" type="text" placeholder="Insert Customer Number Here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Delivery Status</label>  
+          <div class="col-md-4">
+          <input id="ocDelivery" name="ocDelivery" type="text" placeholder="Insert Delivery Status Here" class="form-control input-md">
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Payment Status</label>  
+            <div class="col-md-4">
+            <input id="ocPayment" name="ocPayment" type="text" placeholder="Insert Payment Status Here" class="form-control input-md" required=""> 
+            </div>
+        </div>
+
+    <hr>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Product 1: Manufacturer</label>  
+          <div class="col-md-4">
+          <input id="ocManufacturer1" name="ocManufacturer1" type="text" placeholder="Insert Manufacturer Here" class="form-control input-md" required="">
+         
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Product 1: Model</label>  
+          <div class="col-md-4">
+          <input id="ocModel1" name="ocModel1" type="text" placeholder="Insert Model here" class="form-control input-md" required="">     
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Product 1: Price</label>  
+          <div class="col-md-4">
+          <input id="ocPrice1" name="ocPrice1" type="text" placeholder="Insert Price Here" class="form-control input-md" required="" onchange="calculateTotalPrice()">
+          </div>
+        </div>
+
+    <hr>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Product 2: Manufacturer</label>  
+          <div class="col-md-4">
+          <input id="ocManufacturer2" name="ocManufacturer2" type="text" placeholder="Insert Manufacturer Here" class="form-control input-md">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Product 2: Model</label>  
+          <div class="col-md-4">
+          <input id="ocModel2" name="ocModel2" type="text" placeholder="Insert Model Here" class="form-control input-md">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Product 2: Price</label>  
+          <div class="col-md-4">
+          <input id="ocPrice2" name="ocPrice2" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPrice()"> 
+          </div>
+        </div>
+
+    <hr>
+        
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Product 3: Manufacturer</label>  
+            <div class="col-md-4">
+            <input id="ocManufacturer3" name="ocManufacturer3" type="text" placeholder="Insert Payment Status Here" class="form-control input-md" required=""> 
+            </div>
+          </div>
+        
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Product 3: Model</label>  
+            <div class="col-md-4">
+            <input id="ocModel3" name="ocModel3" type="text" placeholder="Insert Model Here" class="form-control input-md">
+            </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Product 3: Price</label>  
+            <div class="col-md-4">
+            <input id="ocPrice3" name="ocPrice3" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPrice()"> 
+            </div>
+        </div>
+
+    <hr>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Total Price</label>  
+            <div class="col-md-4">
+            <input id="ocTotalPrice" name="ocTotalPrice" type="text" placeholder="Insert Payment Status Here" class="form-control input-md" required=""> 
+            </div>
+        </div>
+        
+    <hr>
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton">Create Order</label>
+            <div class="col-md-4">
+            <button id="createOrderButton" name="createOrderButton" class="btn btn-primary">Create Order</button>
+            </div>
+        </div>
+
+
+        </fieldset>
+        </form>
+   
+        <script src="./order.js"></script>
+
+</body>
+</html>

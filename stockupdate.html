@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Standard HTML5 Meta Data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <!--Title to appear at tab-->
+    <title>Retrieve Stock Record</title>
+    <!--Download bootstrap & jquery in order to support bootsnip-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/>
+</head>
+<body>
+    <form class="form-horizontal" action="./stockupdate.php" method="POST" >
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Update Stock</legend>
+        
+        <h4>Please insert the manufacturer name and model of the record you wish to update</h4>
+
+        <!-- Text input - Existing Manufacturer Name-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Manufacturer</label>  
+          <div class="col-md-4">
+          <input id="uManufacturer" name="uManufacturer" type="text" placeholder="Insert Manufacturer Here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Text input Existing Brand Name-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Model</label>  
+          <div class="col-md-4">
+          <input id="uModel" name="uModel" type="text" placeholder="Insert Model Here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <hr>
+
+        <h4>Please insert the new stock information here</h4>
+
+        <p>(Please complete all fields)</p>
+
+        <!-- Text input New Manufacturer Name-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Manufacturer</label>  
+          <div class="col-md-4">
+          <input id="uNewManufacturer" name="uNewManufacturer" type="text" placeholder="Insert new Manufacturer here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Text input - New Model Name-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Model</label>  
+          <div class="col-md-4">
+          <input id="uNewModel" name="uNewModel" type="text" placeholder="Insert new model name here" class="form-control input-md" required="" >
+          </div>
+        </div>
+        
+        <!-- Text input - New Price-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Price</label>  
+          <div class="col-md-4">
+          <input id="uNewPrice" name="uNewPrice" type="text" placeholder="Insert new price here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="singlebutton">Update Stock Record</label>
+          <div class="col-md-4">
+            <button id="supdatebutton" name="supdateButton" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        
+    <hr>
+</body>
+</html>

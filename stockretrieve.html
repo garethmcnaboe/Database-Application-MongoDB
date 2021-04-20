@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Standard HTML5 Meta Data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <!--Title to appear at tab-->
+    <title>Retrieve Stock Record</title>
+    <!--Download bootstrap & jquery in order to support bootsnip-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/>
+</head>
+<body>
+    <form class="form-horizontal" action="./stockretrieve.php" method="POST">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Stock Retrieve</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Manufacturer">Manufacturer Name</label>  
+          <div class="col-md-4">
+          <input id="rManufacturer" name="rManufacturer" type="text" placeholder="Insert Manufacturer Name Here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Model">Model</label>  
+          <div class="col-md-4">
+          <input id="rModel" name="rModel" type="text" placeholder="Insert Model Here" class="form-control input-md" required="">
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="screatebutton">Search</label>
+          <div class="col-md-4">
+            <button id="sretrievebutton" name="sretrievebutton" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+
+    <hr>
+</body>
+</html>
