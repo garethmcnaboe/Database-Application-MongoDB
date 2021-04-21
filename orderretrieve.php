@@ -94,3 +94,9 @@ echo "</tr>";
 echo "</table>
 <br/>";
 ?>
+
+<!--button to allow user to navigate back to the main page-->
+<a href="/Assignment-05a/#!/" target="_blank">Return to Home</a>
+
+</body>
+</html>

@@ -75,3 +75,5 @@ $updateResult = $collection->updateOne(
 
 printf("Matched %d document(s)\n", $updateResult->getMatchedCount());
 printf("Modified %d document(s)\n", $updateResult->getModifiedCount());
+
+header("location:./index.php?Update Successful");
