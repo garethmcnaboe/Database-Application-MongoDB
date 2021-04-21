@@ -75,3 +75,59 @@ function changeSameAddress() {
     document.getElementById("uotherTitle").disabled = true;
     }
   }
+
+  //function to sum the number inputs in the ordercreate.html file
+  function calculateTotalPriceC(){
+    console.log("total Price method called");
+    var price1 = document.getElementById('ocPrice1').value;
+    var price2 = document.getElementById('ocPrice2').value;
+    var price3 = document.getElementById('ocPrice3').value;
+    
+    //set value to zero if there is nothing inputted
+    if(price1.length === 0){
+      price1 = 0;
+    }
+
+    if(price2.length === 0){
+      price2 = 0;
+    }
+
+    if(price3.length === 0){
+      price3 = 0;
+    }
+
+    //convert string entries to ints
+    var price1Int = parseInt(price1);
+    var price2Int = parseInt(price2);
+    var price3Int = parseInt(price3);
+    
+    document.getElementById('ocTotalPrice').value = price1Int + price2Int + price3Int;
+}
+
+//function to sum the number inputs in the orderupdate.html file
+function calculateTotalPriceU(){
+  console.log("total Price method called");
+  var price1 = document.getElementById('ouPrice1').value;
+  var price2 = document.getElementById('ouPrice2').value;
+  var price3 = document.getElementById('ouPrice3').value;
+  
+  //set value to zero if there is nothing inputted
+  if(price1.length === 0){
+    price1 = 0;
+  }
+
+  if(price2.length === 0){
+    price2 = 0;
+  }
+
+  if(price3.length === 0){
+    price3 = 0;
+  }
+
+  //convert string entries to ints
+  var price1Int = parseInt(price1);
+  var price2Int = parseInt(price2);
+  var price3Int = parseInt(price3);
+  
+  document.getElementById('ouTotalPrice').value = price1Int + price2Int + price3Int;
+}

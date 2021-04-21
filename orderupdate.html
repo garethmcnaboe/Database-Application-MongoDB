@@ -124,7 +124,7 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Product 1: Price</label>  
       <div class="col-md-4">
-      <input id="ouPrice1" name="ouPrice1" type="text" placeholder="Insert Price Here" class="form-control input-md" required="">
+      <input id="ouPrice1" name="ouPrice1" type="text" placeholder="Insert Price Here" class="form-control input-md" required="" onchange="calculateTotalPriceU()">
       </div>
     </div>
 
@@ -150,7 +150,7 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="textinput">Product 2: Price</label>  
       <div class="col-md-4">
-      <input id="ouPrice2" name="ouPrice2" type="text" placeholder="Insert Price Here" class="form-control input-md"> 
+      <input id="ouPrice2" name="ouPrice2" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPriceU()"> 
       </div>
     </div>
 
@@ -177,7 +177,7 @@
     <div class="form-group">
         <label class="col-md-4 control-label" for="textinput">Product 3: Price</label>  
         <div class="col-md-4">
-        <input id="ouPrice3" name="ouPrice3" type="text" placeholder="Insert Price Here" class="form-control input-md"> 
+        <input id="ouPrice3" name="ouPrice3" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPriceU()"> 
         </div>
     </div>
 
@@ -203,5 +203,6 @@
     </fieldset>
     </form>
 
+    <script src="./Assignment-05.js"></script>
 </body>
 </html>

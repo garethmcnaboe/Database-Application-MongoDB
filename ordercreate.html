@@ -11,8 +11,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--Link to stylesheet-->
     <link rel="stylesheet" type="text/css" href="./Assignment-05.css"/> 
-    <!--Link to CSS-->
-    <script src="./order.js"></script>
 </head>
 <body>
     <!--Form used to capture the data to add a document to the order collection-->
@@ -69,7 +67,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Product 1: Price</label>  
           <div class="col-md-4">
-          <input id="ocPrice1" name="ocPrice1" type="text" placeholder="Insert Price Here" class="form-control input-md" required="" onchange="calculateTotalPrice()">
+          <input id="ocPrice1" name="ocPrice1" type="text" placeholder="Insert Price Here" class="form-control input-md" required="" onchange="calculateTotalPriceC()">
           </div>
         </div>
 
@@ -95,7 +93,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Product 2: Price</label>  
           <div class="col-md-4">
-          <input id="ocPrice2" name="ocPrice2" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPrice()"> 
+          <input id="ocPrice2" name="ocPrice2" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPriceC()"> 
           </div>
         </div>
 
@@ -122,7 +120,7 @@
         <div class="form-group">
             <label class="col-md-4 control-label" for="textinput">Product 3: Price</label>  
             <div class="col-md-4">
-            <input id="ocPrice3" name="ocPrice3" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPrice()"> 
+            <input id="ocPrice3" name="ocPrice3" type="text" placeholder="Insert Price Here" class="form-control input-md" onchange="calculateTotalPriceC()"> 
             </div>
         </div>
 
@@ -149,7 +147,7 @@
         </fieldset>
         </form>
    
-        <script src="./order.js"></script>
+        <script src="./Assignment-05.js"></script>
 
 </body>
 </html>

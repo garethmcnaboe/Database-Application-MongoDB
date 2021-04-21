@@ -1,6 +1,7 @@
 <!--This file contains the navigation for the application-->
 <!DOCTYPE html>
 <html>
+<head>
 <!-- import angular in order to facilitate the routing -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
@@ -8,7 +9,9 @@
 <!--link to javascript file-->
 <body ng-app="myApp">
 
-<script src="./customer.js"></script>
+<script src="./Assignment-05.js"></script>
+</head>
+<body>
 
 <h1>Customer / Product Order Database</h1>
 
