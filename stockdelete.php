@@ -24,4 +24,4 @@ $deleteResult = $collection->deleteOne([
 
 printf("Deleted %d document(s)\n", $deleteResult->getDeletedCount());
 
-header("location:./index.php?Delete Successful");
+header("location:./?Delete Successful");

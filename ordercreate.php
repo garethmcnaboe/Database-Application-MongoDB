@@ -87,4 +87,4 @@ $insertOneResult = $collection->insertOne([
 printf("Inserted %d document(s)\n", $insertOneResult->getInsertedCount());
 var_dump($insertOneResult->getInsertedId());
 
-header("location:./index.php?Create Successful");
+header("location:./?Create Successful");

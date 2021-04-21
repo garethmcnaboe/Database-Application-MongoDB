@@ -93,7 +93,7 @@ $insertOneResult = $collection->insertOne([
     "Email" => $personEmail,
     "HAdd1" => $homeAddress1,
     "HAdd2" => $homeAddress2,
-    "HTown" => $homeAddressCountyorCity,
+    "HTown" => $homeAddressTown,
     "HCountyorCity" => $homeAddressCountyorCity,
     "HEircode" => $homeAddressEircode,
     "SAdd1" => $shipAddress1,
@@ -106,4 +106,4 @@ $insertOneResult = $collection->insertOne([
 printf("Inserted %d document(s)\n", $insertOneResult->getInsertedCount());
 var_dump($insertOneResult->getInsertedId());
 
-header("location:../index.php?Create Successful");
+header("location:./?Update Successful");
